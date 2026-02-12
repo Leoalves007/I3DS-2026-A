@@ -1,20 +1,22 @@
 
 import './App.css'
-import Perfil from './assets/components/Perfil/Perfil'
-
+import Perfil from './assets/components/perfil/Perfil'
 
 function App() {
 
   return (
-    <div id='App'>
-      <Perfil />
-      <div className="switch">
-        botão switch
-      </div>
-      <div className='links'></div>
-      <div className='socialinks'></div>
-      <div className='rodape'></div>
+   <div id= 'App'>
+ <Perfil></Perfil>
+
+  
+   <div className="switch">
+    botão switch 
     </div>
+   <div className='links'></div>
+   <div className='socialLinks'></div>
+   <div className='rodape'></div>
+   </div> 
+
   )
 }
 
