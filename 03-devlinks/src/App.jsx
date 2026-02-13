@@ -13,6 +13,7 @@ function App() {
 
   
    <div className="switch">botão switch </div>
+   <div id="Link">
 
    <ul>
     <Link url={""}>Inscreva-se</Link>
@@ -20,7 +21,7 @@ function App() {
     <Link url={""}>Me pague um café!</Link>
     <Link url={""}>Conheça o meu Curso DEV</Link>
    </ul>
-
+</div>
 <div className='links'></div>
 <SocialLink url={"https://hithub.com"} icon={"logo-github"} />
 <SocialLink  url={"https://instagram.com"} icon={"logo-instagram"}/>
