@@ -1,9 +1,9 @@
 
 import './App.css'
-import Link from './assets/components/Link/link'
-import Perfil from './assets/components/perfil/Perfil'
-import Rodape from './assets/components/Rodape/Rodape'
-import SocialLink from './assets/components/SocialLink/SocialLink'
+import Link from './components/Link/link'
+import Perfil from './components/perfil/Perfil'
+import Rodape from './components/Rodape/Rodape'
+import SocialLink from './components/SocialLink/SocialLink'
 
 function App() {
 
