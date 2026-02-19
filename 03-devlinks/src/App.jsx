@@ -1,33 +1,41 @@
+import { useState } from "react";
 import "./App.css";
-import Link from "./components/Link/link";
-import Perfil from "./components/perfil/Perfil";
+import Link from "./components/Link/Link";
+import Perfil from "./components/Perfil/Perfil";
 import Rodape from "./components/Rodape/Rodape";
 import SocialLink from "./components/SocialLink/SocialLink";
+import Switch from "./components/Switch/Switch";
 
+import foto from "./assets/nate.jpg"
 function App() {
-  return (
-    <div id="App">
-      <Perfil fotoPerfil={"https://placehold.co/100"}>
-        Leonardo Fuzinelli{" "}
-      </Perfil>
+  const [isLight, setIsLight] = useState(true);
 
-      <div className="switch">botão switch </div>
+  const troca = () => {
+    setIsLight(!isLight);
+  };
+
+  return (
+    <div id="App" className={isLight ? "light" : ""}>
+      <Perfil fotoPerfil={foto}>LeoAlves</Perfil>
+
+      <Switch troca={troca} isLight={isLight} />
+
       <div id="Link">
         <ul>
           <Link url={""}>Inscreva-se</Link>
-          <Link url={""}>Minha Playlist</Link>
+          <Link url={""}>Minha playlist</Link>
           <Link url={""}>Me pague um café!</Link>
-          <Link url={""}>Conheça o meu Curso DEV</Link>
+          <Link url={""}>Conheça o Curso DEV</Link>
         </ul>
       </div>
 
       <div id="SocialLinks">
-        <SocialLink url={"https://hithub.com"} icon={"logo-github"} />
+        <SocialLink url={"https://github.com"} icon={"logo-github"} />
         <SocialLink url={"https://instagram.com"} icon={"logo-instagram"} />
         <SocialLink url={"https://youtube.com"} icon={"logo-youtube"} />
-        <SocialLink url={"https://br.linkedin.com"} icon={"logo-linkedin"} />
+        <SocialLink url={"https://br.linkedin.com/"} icon={"logo-linkedin"} />
       </div>
-        <Rodape>Leonardo Fuzinelli</Rodape>
+      <Rodape>LeoAlves :)</Rodape>
     </div>
   );
 }

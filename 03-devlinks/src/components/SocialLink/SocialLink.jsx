@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
-const SocialLink = ({ url, icon,}) =>{
+const SocialLink = ({ url, icon }) => {
   return (
-   <a href={url}> 
-      <ion-icon name={icon}> </ion-icon>
-   </a>
+    <a href={url}>
+      <ion-icon name={icon}></ion-icon>
+    </a>
   );
 };
 
